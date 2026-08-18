@@ -1,0 +1,8 @@
+app: tastysetup
+owner: mranidev
+scaling:
+  mode: single_concurrency
+capabilities:
+  instaboot:
+    requests:
+      - path: /
