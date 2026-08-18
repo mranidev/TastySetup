@@ -1,17 +1,15 @@
-# Required fields
 kind: wasmer.io/App.v0
-owner: elalaoui
 name: tastysetup
+owner: elalaoui
 package: .
-
-# Optional fields
+capabilities:
+  instaboot:
+    mode: null
+    requests:
+    - path: /
+  database:
+    engine: mysql
 debug: true
 scaling:
   mode: single_concurrency
-
-capabilities:
-  database:
-    engine: mysql
-  instaboot:
-    requests:
-      - path: /
+app_id: da_KwGIWtMUmbWo
