@@ -1,5 +1,5 @@
-kind: wasmer.io/App.v0
 name: tastysetup
+app_id: da_KwGIWtMUmbWo
 owner: elalaoui
 package: .
 env:
@@ -27,4 +27,4 @@ capabilities:
 debug: false
 scaling:
   mode: single_concurrency
-app_id: da_KwGIWtMUmbWo
+kind: wasmer.io/App.v0

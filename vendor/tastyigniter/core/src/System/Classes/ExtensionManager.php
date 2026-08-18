@@ -96,7 +96,13 @@ class ExtensionManager
         }
 
         foreach ($directories as $directory) {
-            foreach (File::glob($directory.'/*/*/{extension,composer}.json', GLOB_BRACE) as $path) {
+            // Wasmer Edge's wasm PHP build has no GLOB_BRACE constant — scan
+            // each pattern separately instead of using brace expansion.
+            foreach (File::glob($directory.'/*/*/extension.json') as $path) {
+                $paths[] = dirname((string)$path);
+            }
+
+            foreach (File::glob($directory.'/*/*/composer.json') as $path) {
                 $paths[] = dirname((string)$path);
             }
         }
