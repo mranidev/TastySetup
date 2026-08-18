@@ -1,16 +1,8 @@
-[package]
-name = "elalaoui/tastysetup"
-version = "0.4.0"
-description = "TastyIgniter restaurant ordering system on Wasmer Edge"
-license = "MIT"
-
 [dependencies]
 "php/php" = "=8.3.4"
 
 [fs]
-"/app" = "."
-"/app/public" = "public"
-"/config" = "config"
+"/app/" = "."
 
 [[command]]
 name = "run"
@@ -18,5 +10,4 @@ module = "php/php:php"
 runner = "wasi"
 
 [command.annotations.wasi]
-main-args = ["-t", "/app/public", "-S", "localhost:8080"]
-env = ["PHPRC=/config/"]
+main-args = ["-t", "/app/public", "-S", "0.0.0.0:8080", "/app/server.php"]
