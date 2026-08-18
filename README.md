@@ -1,68 +1,59 @@
-<p align="center"><a href="https://tastyigniter" target="_blank"><img src="https://tastyigniter.com/images/logos/logo-padded.png" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
-<a href="https://packagist.org/packages/tastyigniter/TastyIgniter"><img src="https://img.shields.io/packagist/v/tastyigniter/TastyIgniter.svg?label=Stable&style=flat-square" alt="Stable"></a>
-<a href="https://packagist.org/packages/tastyigniter/TastyIgniter"><img src="https://poser.pugx.org/tastyigniter/flame/downloads" alt="Total Downloads"></a>
-<a href="https://github.com/tastyigniter/TastyIgniter/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/tastyigniter/TastyIgniter.svg?label=License&style=flat-square" alt="License"></a>
-<a href="https://github.com/tastyigniter/TastyIgniter" title="PHP Versions Supported"><img alt="PHP Versions Supported" src="https://img.shields.io/badge/php-8.3%20to%208.4-777bb3.svg?logo=php&logoColor=white&labelColor=555555"></a>
-<a href="https://translate.tastyigniter.com/engage/tastyigniter/"><img src="https://translate.tastyigniter.com/widget/tastyigniter/svg-badge.svg" alt="Translate"></a>
-<a href="https://twitter.com/TastyIgniter"><img src="https://img.shields.io/twitter/follow/TastyIgniter.svg?label=Follow" alt="Twitter"></a>
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-[TastyIgniter](https://tastyigniter.com/) provides a professional and reliable platform for restaurants wanting to offer
-online food ordering and table reservation to their customers.
+## About Laravel
 
-![screenshot](https://tastyigniter.com/images/mockups/v4/Menus.png)
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-### Documentation
-The best place to learn TastyIgniter is by reading the [documentation](https://tastyigniter.com/docs)
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-### Installation
-Please read the [Installation Guide](https://tastyigniter.com/docs/installation) for more information.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-### Questions
-For questions and support please use the [Community Forum](https://forum.tastyigniter.com) or [Join us on Discord](https://tastyigniter.com/discord). 
+## Learning Laravel
 
-### Issues
-Please report bugs using the [GitHub issue tracker](https://github.com/tastyigniter/TastyIgniter/issues)
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
 
-### Stay in touch
-- [Follow us on Twitter](https://twitter.com/tastyigniter/) for announcements and updates.
-- [Blog](https://tastyigniter.com/blog) for tips and latest developments in the food industry.
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+## Laravel Sponsors
+
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+
+### Premium Partners
+
+- **[Vehikl](https://vehikl.com)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Redberry](https://redberry.international/laravel-development)**
+- **[Active Logic](https://activelogic.com)**
 
 ## Contributing
-We would love your help building TastyIgniter! Please read the [Contributing Guidelines](.github/CONTRIBUTING.md) to learn how you can help.
 
-Thank you to all the people who already contributed to TastyIgniter!
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-<a href="https://github.com/tastyigniter/TastyIgniter/graphs/contributors"><img src="https://opencollective.com/tastyigniter/contributors.svg?width=890&button=false" /></a>
+## Code of Conduct
 
-## Supporting TastyIgniter
-TastyIgniter is an MIT-licensed community-driven project with its continuous development made possible by the support of these awesome [backers](#contributing). If you'd like to help support the future of the project, please consider:
-1. Donating development time to the project.
-2. Spreading the word about TastyIgniter.
-3. Becoming a sponsor by donating funds (see below).
-
-## Sponsors
-Become a sponsor and get your logo on your README on Github with a link to your site. 
-
-### via Open Collective
-<a href="https://opencollective.com/tastyigniter" target="_blank" rel="noopener noreferrer"><img src="https://opencollective.com/tastyigniter/sponsors.svg"></a>
-
-<a href="https://opencollective.com/tastyigniter" target="_blank" rel="noopener noreferrer"><img src="https://opencollective.com/tastyigniter/backers.svg"></a>
-
-### via Patreon
-[[Become a Patreon sponsor](https://www.patreon.com/sampoyigi)]
-
-## Built With :heart:
-- Laravel full-stack PHP framework
-- Bootstrap 5 front-end framework
-
-## Author
-TastyIgniter was created by [Samuel Adepoyigi](https://github.com/sampoyigi).
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
 ## Security Vulnerabilities
-If you discover a security vulnerability within TastyIgniter, please send an e-mail to support@tastyigniter.com.
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
-TastyIgniter is open-source software licensed under the [MIT license](https://tastyigniter.com/licence/).
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

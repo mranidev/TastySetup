@@ -1,8 +1,17 @@
-app: tastysetup
-owner: mranidev
+# Required fields
+kind: wasmer.io/App.v0
+owner: elalaoui
+name: tastysetup
+package: .
+
+# Optional fields
+debug: true
 scaling:
   mode: single_concurrency
+
 capabilities:
+  database:
+    engine: mysql
   instaboot:
     requests:
       - path: /

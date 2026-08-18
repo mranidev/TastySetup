@@ -1,6 +1,11 @@
-*.css linguist-vendored
-*.scss linguist-vendored
-*.js linguist-vendored
+* text=auto eol=lf
 
-# Set the default behavior, in case people don't have core.autocrlf set.
-text=auto
+*.blade.php diff=html
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+
+/.github export-ignore
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore

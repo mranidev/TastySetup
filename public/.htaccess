@@ -5,19 +5,13 @@
 
     RewriteEngine On
 
-    # Block script execution anywhere under /storage/
-    RewriteCond %{REQUEST_URI} ^/storage/ [NC]
-    RewriteCond %{REQUEST_URI} \.(php|php\d*|phtml|phar|cgi|pl|py|asp|aspx|sh)$ [NC]
-    RewriteRule ^ - [F,L]
-
-    # Block dotfiles anywhere under /storage/ (.env, .htaccess, etc.)
-    RewriteCond %{REQUEST_URI} ^/storage/ [NC]
-    RewriteCond %{REQUEST_URI} /\.[^/]+$ [NC]
-    RewriteRule ^ - [F,L]
-
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Handle X-XSRF-Token Header
+    RewriteCond %{HTTP:x-xsrf-token} .
+    RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d

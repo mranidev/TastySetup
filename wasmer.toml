@@ -1,3 +1,9 @@
+[package]
+name = "elalaoui/tastysetup"
+version = "0.1.0"
+description = "TastyIgniter restaurant ordering system on Wasmer Edge"
+license = "MIT"
+
 [dependencies]
 "php/php" = "=8.3.4"
 
