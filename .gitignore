@@ -21,3 +21,4 @@ storage/framework/cache/*.php
 
 # Local runtime data — never commit
 .freebuff/
+.env

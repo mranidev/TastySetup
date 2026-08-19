@@ -96,7 +96,7 @@ class ExtensionManager
         }
 
         foreach ($directories as $directory) {
-            foreach (File::glob($directory.'/*/*/{extension,composer}.json', GLOB_BRACE) as $path) {
+            foreach (File::glob($directory.'/*/*/{extension,composer}.json', defined("GLOB_BRACE") ? GLOB_BRACE : 0) as $path) {
                 $paths[] = dirname((string)$path);
             }
         }
