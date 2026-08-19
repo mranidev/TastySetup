@@ -1,3 +1,4 @@
+kind: wasmer.io/App.v0
 name: tastysetup
 owner: elalaoui
 package: .
@@ -11,9 +12,9 @@ env:
   DB_CONNECTION: mysql
   DB_PREFIX: ti_
   DB_ALLOW_NO_PRIMARY_KEY: 'true'
-  CACHE_DRIVER: database
+  CACHE_DRIVER: file
   QUEUE_CONNECTION: sync
-  SESSION_DRIVER: database
+  SESSION_DRIVER: file
   MAIL_MAILER: log
   SESSION_LIFETIME: '120'
   LOG_CHANNEL: stderr
@@ -29,4 +30,4 @@ capabilities:
 debug: false
 scaling:
   mode: single_concurrency
-kind: wasmer.io/App.v0
+app_id: da_KwGIWtMUmbWo
