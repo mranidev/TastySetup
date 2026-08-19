@@ -4787,17 +4787,17 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.6.13",
-            "version_normalized": "1.6.13.0",
+            "version": "1.6.14",
+            "version_normalized": "1.6.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "9cb54414cdcd2ec5ca292e7ba19dba3a3444885d"
+                "reference": "d5362ead1f26e220e64ade458efa4e997f5a8fc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/9cb54414cdcd2ec5ca292e7ba19dba3a3444885d",
-                "reference": "9cb54414cdcd2ec5ca292e7ba19dba3a3444885d",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/d5362ead1f26e220e64ade458efa4e997f5a8fc0",
+                "reference": "d5362ead1f26e220e64ade458efa4e997f5a8fc0",
                 "shasum": ""
             },
             "require": {
@@ -4811,7 +4811,7 @@
                 "phpunit/phpunit": "^9.6.36",
                 "symplify/easy-coding-standard": "^13.2.17"
             },
-            "time": "2026-08-15T03:07:32+00:00",
+            "time": "2026-08-18T20:07:53+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {

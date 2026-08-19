@@ -1,7 +1,14 @@
 [dependencies]
+# Official PHP runtime for Wasmer Edge (see https://docs.wasmer.io/edge/guides/php/)
+# WARNING: this wasm PHP build (8.3.4) is fragile — passing ANY `-d` flag makes
+# mbstring's regex functions (mb_split, needed by Laravel's Str::studly)
+# silently disappear, and overriding PHPRC with a custom php.ini stops the
+# bundled shared extensions (mbstring, pdo_mysql, bcmath, gd, ...) from
+# loading at all. Run PHP with its stock configuration: no -d, no PHPRC.
 "php/php" = "=8.3.4"
 
 [fs]
+# Bundle the whole Laravel/TastyIgniter project at /app inside the sandbox.
 "/app/" = "."
 
 [[command]]
@@ -10,4 +17,11 @@ module = "php/php:php"
 runner = "wasi"
 
 [command.annotations.wasi]
+# Start PHP's built-in web server with Laravel's public/ as the document root
+# and server.php as the router. The router is REQUIRED: without it, the
+# built-in server 404s every URL that isn't a real file on disk (Livewire's
+# /livewire/* routes, TastyIgniter's /_assets/* combiner output, /checkout,
+# /account/*, ...) instead of falling through to public/index.php.
+# Bind 0.0.0.0 (not "localhost") — the sandbox does not resolve "localhost",
+# so the server would otherwise fail to start.
 main-args = ["-t", "/app/public", "-S", "0.0.0.0:8080", "/app/server.php"]
